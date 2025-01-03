@@ -1,26 +1,68 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 
 \usepackage{titlesec}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
 
-aquino-cv.pdf
+\setmainfont[
+  ItalicFont={Geist},
+  ItalicFeatures={FakeSlant=0.2},
+  BoldItalicFeatures={FakeSlant=0.2},
+]{Geist}
+\linespread{1.5}
+\pagenumbering{gobble}
+
+\titleformat{\section}
+{\Large\bfseries}
+{}
+{0em}
+{}
+\titlespacing*{\section}
+{0em}
+{0em}
+{0em}
 
 \begin{document}
+\begin{flushleft}
 
-\title{Juca Aquino}
-\author{Juca Aquino}
+{\huge\bfseries Juca Aquino}
 
-\maketitle
+juca@jucaaquino.com\quad |\quad jucaaquino.com\quad |\quad @jucaqi
 
+b. 2004, São Paulo, Brazil
+
+Lives and works in Winnipeg, MB, Canada
 \section{Education}
-
+\begin{tabular}{@{}lll}
+2026 & Bachelor of Fine Arts, University of Manitoba 
+\end{tabular}
 \section{Exhibitions}
-
+\begin{tabular}{@{}lll}
+    2024 & {\textbf{\itshape Juca Aquino: All of the Above}}, School of Art Student Gallery, Winnipeg, MB \\
+     & {\itshape Assorted Editions: SOA Takeover}, Martha Street Studio, Winnipeg, MB \\
+     & {\itshape Night Visions}, Osbourne Village Biz, Winnipeg, MB \\
+     & {\itshape SOA Show + Sale}, University of Manitoba, Winnipeg, MB \\
+     & {\textbf{\itshape Juca Aquino: Tout ce qui précède}}, La Maison des artistes, Winnipeg, MB \\
+2023 & {\itshape Inkubator Showcase}, Martha Street Studio, Winnipeg, MB
+\end{tabular}
 \section{Residencies}
-
+\begin{tabular}{@{}lll}
+2023 & Inkubator Program, Martha Street Studio, Winnipeg, MB
+\end{tabular}
+\section{Public Talks}
+\begin{tabular}{@{}lll}
+    2024 & {\itshape Eat Your Arts \& Vegetables} (radio show hosted by Derek Brueckner), January 2024
+\end{tabular}
 \section{Press}
-
+\begin{tabular}{@{}lll}
+2024 & Sarah Struthers. "Painting With Pixels", {\itshape The Uniter}, September 2024
+\end{tabular}
 \section{Work Expirience}
-
+\begin{tabular}{@{}lll}
+2024 & Creative Coding Workshop Instructor, Winnipeg Film Group, Winnipeg, MB \\
+2023 & Private Contractor for STAGES, Plug In ICA, Winnipeg, MB
+\end{tabular}
 \section{Collections}
 
+\end{flushleft}
 \end{document}
