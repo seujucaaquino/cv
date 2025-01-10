@@ -1,70 +1,70 @@
 \documentclass[12pt]{article}
 
-\usepackage{titlesec}
 \usepackage[margin=1in]{geometry}
 \usepackage{fontspec}
+\usepackage[NoDate]{currvita}
+\usepackage{hyperref}
 
-\setmainfont[
-  ItalicFont={Geist},
-  ItalicFeatures={FakeSlant=0.2},
-  BoldItalicFeatures={FakeSlant=0.2},
-]{Geist}
-\linespread{1.5}
 \pagenumbering{gobble}
 
-\titleformat{\section}
-{\Large\bfseries}
-{}
-{0em}
-{}
-\titlespacing*{\section}
-{0em}
-{0em}
-{0em}
+\setmainfont[
+    ItalicFont={Geist},
+    ItalicFeatures={FakeSlant=0.2},
+    BoldItalicFeatures={FakeSlant=0.2},
+]{Geist}
+
+\renewcommand*{\cvheadingfont}{\huge\bfseries}
+\renewcommand*{\cvlistheadingfont}{\Large\bfseries}
+
+\setlength{\parskip}{8pt}
+\AtBeginDocument{
+    \setlength{\cvlabelwidth}{0.5in}
+}
 
 \begin{document}
-\begin{flushleft}
+\begin{cv}{Juca Aquino}
+\vspace{-12pt}
+\begin{cvlist}{}
+\item[juca@jucaaquino.com\quad \href{http://jucaaquino.com}{jucaaquino.com}\quad \href{http://instagram.com/jucaqi}{@jucaqi}] {}
+\item[b. 2004, S\~{a}o Paulo, Brazil] {}
+\item[Lives and works in Winnipeg, MB, Canada] {}
+\end{cvlist}
 
-{\huge\bfseries Juca Aquino}
+\begin{cvlist}{Education}
+\item[2026] Bachelor of Fine Arts, University of Manitoba
+\end{cvlist}
 
-juca@jucaaquino.com\quad |\quad jucaaquino.com\quad |\quad @jucaqi
+\begin{cvlist}{Exhibitions}
+\item[2024] {\itshape Juca Aquino: All of the Above}, School of Art Student Gallery, Winnipeg, MB
+\item       {\itshape Assorted Editions: SOA Takeover}, Martha Street Studio, Winnipeg, MB
+\item       {\itshape Night Visions}, Osbourne Village Biz, Winnipeg, MB
+\item       {\itshape SOA Show + Sale}, University of Manitoba, Winnipeg, MB
+\item       {\itshape Juca Aquino: Tout ce qui précède}, La Maison des artistes, Winnipeg, MB
+\item[2023] {\itshape Inkubator Showcase}, Martha Street Studio, Winnipeg, MB
+\end{cvlist}
 
-b. 2004, São Paulo, Brazil
+\begin{cvlist}{Residencies}
+\item[2023] Inkubator Program, Martha Street Studio, Winnipeg, MB
+\end{cvlist}
 
-Lives and works in Winnipeg, MB, Canada
-\section{Education}
-\begin{tabular}{@{}lll}
-2026 & Bachelor of Fine Arts, University of Manitoba 
-\end{tabular}
-\section{Exhibitions}
-\begin{tabular}{@{}lll}
-    2024 & {\itshape Juca Aquino: All of the Above}, School of Art Student Gallery, Winnipeg, MB \\
-     & {\itshape Assorted Editions: SOA Takeover}, Martha Street Studio, Winnipeg, MB \\
-     & {\itshape Night Visions}, Osbourne Village Biz, Winnipeg, MB \\
-     & {\itshape SOA Show + Sale}, University of Manitoba, Winnipeg, MB \\
-     & {\itshape Juca Aquino: Tout ce qui précède}, La Maison des artistes, Winnipeg, MB \\
-2023 & {\itshape Inkubator Showcase}, Martha Street Studio, Winnipeg, MB
-\end{tabular}
-\section{Residencies}
-\begin{tabular}{@{}lll}
-2023 & Inkubator Program, Martha Street Studio, Winnipeg, MB
-\end{tabular}
-\section{Public Talks}
-\begin{tabular}{@{}lll}
-    2024 & {\itshape Eat Your Arts \& Vegetables} (radio show hosted by Derek Brueckner), January 2024
-\end{tabular}
-\section{Press}
-\begin{tabular}{@{}lll}
-2024 & Sarah Struthers. "Painting With Pixels", {\itshape The Uniter}, September 2024
-\end{tabular}
-\section{Work Experience}
-\begin{tabular}{@{}lll}
-2024 & Creative Coding Workshop Instructor, Winnipeg Film Group, Winnipeg, MB \\
-2023 & Private Contractor for STAGES, Plug In ICA, Winnipeg, MB
-\end{tabular}
-\section{Collections}
-School of Art Print Archive
+\begin{cvlist}{Public Talks}
+\item[2024] Interview by Derek Brueckner, {\itshape Eat Your Arts \& Vegetables}, January 2024
+\end{cvlist}
 
-Martha Street Studio
-\end{flushleft}
+\begin{cvlist}{Press}
+\item[2024] Sarah Struthers, "Painting With Pixels", {\itshape The Uniter}, September 2024
+\end{cvlist}
+
+\begin{cvlist}{Work Experience}
+\item[2024] Creative Coding Workshop Instructor, Winnipeg Film Group, Winnipeg, MB
+\item[2023] Private Contractor for STAGES, Plug In ICA, Winnipeg, MB
+\end{cvlist}
+
+\begin{cvlist}{Collections}
+\item[School of Art Print Archive] {}
+\item[Martha Street Studio] {}
+%\item[Private Collections] {}
+\end{cvlist}
+
+\end{cv}
 \end{document}
